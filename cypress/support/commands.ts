@@ -12,7 +12,25 @@
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
-//
+type Product = {
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+};
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      fillLoginForm(username: string, password: string): Chainable<void>;
+    }
+  }
+}
+Cypress.Commands.add('fillLoginForm', (username: string, password: string) => {
+  cy.get('input[formcontrolname="username"]').type(username);
+  cy.get('input[formcontrolname="password"]').type(password);
+});
+export {};
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })

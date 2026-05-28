@@ -1,0 +1,33 @@
+{
+  "products": [
+    {
+      "title": "Gaming Mechanical Keyboard",
+      "price": 89.99,
+      "description": "RGB mechanical keyboard for gaming and productivity",
+      "category": "electronics",
+      "image": "https://i.imgur.com/keyboard.png"
+
+    },
+    {
+      "title": "Wireless Headphones Pro",
+      "price": 129.50,
+      "description": "Noise cancelling wireless headphones",
+      "category": "electronics",
+      "image": "https://i.imgur.com/headphones.png"
+    },
+    {
+      "title": "Minimalist Backpack",
+      "price": 54.25,
+      "description": "Water resistant backpack for work and travel",
+      "category": "fashion",
+      "image": "https://i.imgur.com/backpack.png"
+    },
+    {
+      "title": "Smart Fitness Watch",
+      "price": 199.99,
+      "description": "Fitness smartwatch with heart rate monitoring",
+      "category": "electronics",
+      "image": "https://i.imgur.com/watch.png"
+    }
+  ]
+}
